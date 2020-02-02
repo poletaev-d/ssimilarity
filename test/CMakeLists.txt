@@ -5,9 +5,9 @@ set(SOURCES main.cpp similarity_functions.cpp)
 add_executable(ssimilarity_test ${SOURCES})
 
 
-target_include_directories(ssimilarity_test PRIVATE "../third_party/googletest/include")
+target_include_directories(ssimilarity_test PRIVATE "../third_party/googletest/googletest/include")
 set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
-add_subdirectory(../third_party/googletest gtest_build)
+add_subdirectory(../third_party/googletest/googletest gtest_build)
 target_link_libraries(ssimilarity_test gtest)
 
 target_include_directories(ssimilarity_test PRIVATE "../src")
