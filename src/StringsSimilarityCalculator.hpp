@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "Charwise.hpp"
 #include "Levenshtein.hpp"
 
@@ -12,7 +12,7 @@ enum class CalculationMethod { CHARWISE, LEVENSHTEIN };
 * @param a First string
 * @param b Second string
 * @param method Algorithm of similarity calculation
-* @return Coefficient of similarity from 0.0 до 1.0
+* @return Coefficient of similarity from 0.0 to 1.0
 */
 template<class T>
 double calculate(const T& a, const T& b, CalculationMethod method = CalculationMethod::CHARWISE){

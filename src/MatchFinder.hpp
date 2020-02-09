@@ -1,4 +1,4 @@
-#pragma once
+п»ї#pragma once
 #include <vector>
 #include <set>
 #include <map>
@@ -38,7 +38,7 @@ namespace ssimilarity {
  * @param b Vector containing string values
  * @param method Method of similarity calculation
  * @param useWeights Set to false if you want to return average of similarities instead of weighted average
- * @return Coefficient of similarity from 0.0 до 1.0
+ * @return Coefficient of similarity from 0.0 РґРѕ 1.0
 */
 template<class T>
 double compareVectors(const std::vector<T>& a, const std::vector<T>& b, CalculationMethod method = CalculationMethod::CHARWISE, bool useWeights = true) {
@@ -90,7 +90,7 @@ std::vector<Match<T1, T2> > FindMatches(const std::vector<T1>& first, const std:
 {
   typedef detail_::TemporaryMatch TemporaryMatch;
 
-  std::vector<TemporaryMatch<T1, T2>> tmpPairs;
+  std::vector<TemporaryMatch<T1, T2> > tmpPairs;
   int i = 0;
   for (const T1& d : first) {
     for (const T2& s : second) {
